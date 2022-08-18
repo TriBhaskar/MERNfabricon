@@ -33,7 +33,8 @@ export default function Orders() {
               <TableCell className="order__item">{item.cart.map((cartItem, index) => {
                 return (
                   <div key={index} className="flexrow">
-                    <img src={cartItem.images.url} alt="" className="order__image"/>
+                    {console.log(cartItem)}
+                    {/* <img src={cartItem.images.url} alt="" className="order__image"/> */}
                     <p>{cartItem.title} - {cartItem.quantity}</p>
                   </div>
                 )
